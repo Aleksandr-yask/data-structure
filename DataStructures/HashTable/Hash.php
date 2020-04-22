@@ -6,7 +6,7 @@ namespace DataStructures\HashTable;
 
 class Hash
 {
-    const _LIMIT = 14;
+    const LIMIT = 14;
 
     public function hash($value): int
     {
@@ -17,7 +17,7 @@ class Hash
             $hash += $ord;
         }
 
-        return $hash % self::_LIMIT;
+        return $hash % self::LIMIT;
     }
 
 
